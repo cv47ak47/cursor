@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联络 — 拾光器物</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="mark"></span>拾光</a>
+      <button class="menu-btn" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a href="products.html">器物</a>
+        <a class="active nav-cta" href="contact.html">联络</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-hero">
+      <p class="eyebrow">Contact</p>
+      <h1>来坐一会儿，<br>或写一封信。</h1>
+      <p class="muted">展示室在杭州市西湖区云栖路 88 号。周三至周日 11:00–18:30。送修请在包裹里留下编号。</p>
+    </section>
+    <section class="section contact-grid">
+      <div>
+        <h2>展示室</h2>
+        <p class="muted">杭州市西湖区云栖路 88 号<br>hello@shiguang.example<br>0571-8600-2016</p>
+        <div class="map" role="img" aria-label="展示室位置示意"><span class="pin"></span></div>
+      </div>
+      <form id="contact-form">
+        <label>姓名<input name="name" autocomplete="name" required></label>
+        <label>邮箱<input name="email" type="email" autocomplete="email" required></label>
+        <label>想了解的事<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit" style="width:fit-content">送出留言</button>
+        <p class="note" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><span>拾光器物 · 杭州</span><span>示例官网，仅供演示</span></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

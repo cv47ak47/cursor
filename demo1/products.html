@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>器物 — 拾光器物</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="mark"></span>拾光</a>
+      <button class="menu-btn" aria-label="打开菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html">首页</a>
+        <a href="about.html">关于</a>
+        <a class="active" href="products.html">器物</a>
+        <a class="nav-cta" href="contact.html">联络</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="page-hero">
+      <p class="eyebrow">Objects</p>
+      <h1>六件在册的器物</h1>
+      <p class="muted">按类别筛选。价格为展示室零售价，线上不设折扣。点击卡片查看保养说明。</p>
+      <div class="filters">
+        <button class="on" type="button" data-filter="all">全部</button>
+        <button type="button" data-filter="tea">茶器</button>
+        <button type="button" data-filter="light">灯具</button>
+        <button type="button" data-filter="home">家居</button>
+      </div>
+    </section>
+    <section class="cards" style="padding-bottom:72px">
+      <button class="card" data-cat="tea" data-swatch="tea" data-name="素盏" data-meta="龙泉 · 灰釉 · ¥280" data-desc="手拉坯茶杯，口沿薄、腹壁厚。适合 90–120ml。空杯不要直冲沸水。">
+        <div class="swatch tea"></div><div class="body"><h3>素盏</h3><p class="muted">茶器 · 龙泉</p><p class="price">¥280</p></div>
+      </button>
+      <button class="card" data-cat="tea" data-swatch="pot" data-name="暮山壶" data-meta="宜兴 · 朱泥 · ¥1,280" data-desc="180ml 单人壶。第一周只用清水，再开始泡淡茶。壶钮可拆。">
+        <div class="swatch pot"></div><div class="body"><h3>暮山壶</h3><p class="muted">茶器 · 宜兴</p><p class="price">¥1,280</p></div>
+      </button>
+      <button class="card" data-cat="light" data-swatch="lamp" data-name="纸灯" data-meta="杭州 · 和纸 · ¥640" data-desc="暖光 2700K。灯罩可按档案单独更换，木座保修开裂。">
+        <div class="swatch lamp"></div><div class="body"><h3>纸灯</h3><p class="muted">灯具 · 杭州</p><p class="price">¥640</p></div>
+      </button>
+      <button class="card" data-cat="home" data-swatch="plate" data-name="石盘" data-meta="建水 · 黑陶 · ¥360" data-desc="无釉黑陶餐盘。可用中性清洁剂，不要进洗碗机。">
+        <div class="swatch plate"></div><div class="body"><h3>石盘</h3><p class="muted">家居 · 建水</p><p class="price">¥360</p></div>
+      </button>
+      <button class="card" data-cat="home" data-swatch="cloth" data-name="茶席" data-meta="桐乡 · 亚麻 · ¥220" data-desc="水洗会轻微起皱。这是布料的状态，不建议熨到完全平整。">
+        <div class="swatch cloth"></div><div class="body"><h3>茶席</h3><p class="muted">家居 · 桐乡</p><p class="price">¥220</p></div>
+      </button>
+      <button class="card" data-cat="home" data-swatch="incense" data-name="香器" data-meta="景德镇 · 白瓷 · ¥190" data-desc="只承线香。灰落在釉面内，用干刷清掉即可，不要浸水。">
+        <div class="swatch incense"></div><div class="body"><h3>香器</h3><p class="muted">家居 · 景德镇</p><p class="price">¥190</p></div>
+      </button>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><span>拾光器物 · 杭州</span><span>示例官网，仅供演示</span></div></footer>
+  <dialog id="product-dialog">
+    <div class="dialog-top swatch"></div>
+    <div class="dialog-body">
+      <h3 data-field="name"></h3>
+      <p class="price" data-field="meta"></p>
+      <p class="muted" data-field="desc" style="margin:12px 0 18px"></p>
+      <button class="dialog-close" type="button">关闭</button>
+    </div>
+  </dialog>
+  <script src="js/main.js"></script>
+</body>
+</html>
